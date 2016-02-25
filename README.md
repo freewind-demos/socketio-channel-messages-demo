@@ -1,7 +1,14 @@
-# chat-example
+How to run
+=======
 
-This is the source code for a very simple chat example used for 
-the [Getting Started](http://socket.io/get-started/chat/) guide 
-of the Socket.IO website.
+```
+npm install
+node index.js
+```
 
-Please refer to it to learn how to run this application.
+Then open multiple browses and visit <http://localhost:3000>, and type anything in the bottom text fields to chat.
+
+Reference
+============
+
+1. <http://socket.io/get-started/chat/>
