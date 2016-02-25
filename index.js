@@ -6,8 +6,10 @@ var io = require('socket.io')(http);
 app.use(express.static('public'));
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
+  socket.on('channel message', function(msg){
+  	var channel = msg.channel;
+  	console.log("get message from channel [" + channel + "]: " + msg.text);
+    io.emit('channel message', msg);
   });
 });
 
